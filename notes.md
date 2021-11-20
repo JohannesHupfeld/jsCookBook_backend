@@ -3,6 +3,7 @@
     - name
     - ingredients
     - instructions
+    - image_url
     - category_id
 
 - Category
