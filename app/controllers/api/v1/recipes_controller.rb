@@ -3,7 +3,7 @@ class Api::V1::RecipesController < ApplicationController
   def index
     recipes = Recipe.all
       # no need for insance variables since we are not rendering to an erb but redirecting with fetch requests
-    render json: recipes
+    render json: RecipeSerializer.new(recipes)
   end
 
   def create
@@ -12,6 +12,7 @@ class Api::V1::RecipesController < ApplicationController
       render json: recipe, status: :accepted 
     else
       render json: {errors: recipe.errors.full_messages}, status: :unprocessable_entity
+    end
   end
 
   private
