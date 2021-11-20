@@ -25,7 +25,3 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-
-js-project-00.md
-
-JavaScript-Rails-API-Project-Setup.md
