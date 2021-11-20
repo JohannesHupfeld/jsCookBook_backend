@@ -28,5 +28,5 @@ american = Category.create(name: "American")
 french = Category.create(name: "French")
 italian = Category.create(name: "Italian")
 
-# source: https://en.wikipedia.org/wiki/African_art
+
 
