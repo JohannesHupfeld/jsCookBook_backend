@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+Category.destroy_all
+Recipe.destroy_all
 
 american = Category.create(name: "American")
 french = Category.create(name: "French")
