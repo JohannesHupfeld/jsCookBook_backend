@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # since our front end application might be hosted on a specific domain, we will want all of our backend routes to be name spaced to indicate they are routes associated with an api.
   namespace :api do
     namespace :v1 do
-      resources :recipes, only: [:index, :create]
+      resources :recipes, only: [:index, :show, :create]
       resources :categories, only: [:index]
     end
   end

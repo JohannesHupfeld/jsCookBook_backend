@@ -6,6 +6,10 @@ class Api::V1::RecipesController < ApplicationController
     render json: RecipeSerializer.new(recipes)
   end
 
+  def show
+    render json: recipe
+  end
+
   def create
     recipe = Recipe.new(recipe_params)
     if recipe.save
